@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+<label> Contact Person Phone Number*</label>
+<input type="phone number" name="phone number" placeholder="contact person phone" id="" required/><br>
+<label> Site Name/Venue*</label>
+<input type="site name" name="site name" placeholder="site name/venue" id="site name" required/><br>
+<label> House number * </label>
+<input type=" house number  " placeholder="house number" name="house number" id="house number" required/><br>
+<label> Date Reported* </label>
+<input type=" date reported" placeholder="select time and date" name="date reported" id="date reported" required/><br>
+<label> Scheduled Time* </label>
+<input type="radio" name="yes" value="yes"> Yes
+<input type="radio" name="no" value="no"> No <br>
+<input type="scheduled time" placeholder="select time and date" name="scheduled time" required/><br>
+<label> Assign to*</label>
+<input type="assign to" placeholder="assign engineer" name="assign to" required/><br>
+<label> Attachment area </label>
+<input type="file" placeholder="attach or upload something " name="upload" rows="5" cols="10" id="about"></input>
+<el-upload
+        class="upload-demo"
+        drag
+        action="https://jsonplaceholder.typicode.com/posts/"
+        :on-preview="handlePreview"
+        :on-remove="handleRemove"
+        :file-list="fileList"
+        multiple>
+    <i class="el-icon-upload"></i>
+    <div class="el-upload__text">Drop file here or <em>click to upload</em></div>
+    <div class="el-upload__tip" slot="tip"></div>
+
+</el-upload>
+
 </html>

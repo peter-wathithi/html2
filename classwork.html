@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+
+<html>
+<header>
+    <P> DATA INPUT </P>
+</header>
+<nav>
+    <a href="classswork.php"></a>
+</nav>
+<section>
+    <form action="server.php" method="post">
+        <label> FirstName:</label>
+        <input type="text" name="firstname" placeholder="firstname" id="name" required/><br>
+        <label> Email </label>
+        <input type=" email" placeholder="input email" name="email" id="email"/><br>
+        <label>About </label>
+        <textarea type=" textarea" placeholder="type something" name="about" rows="10" id="about"></textarea> <br>
+        <label>Password </label>
+        <input type="password" placeholder="password" name="password" required/><br>
+        <input type="submit" name="save" value="save">Submit
+        <input type="submit" name="login" value="login">Login
+    </form>
+</section>
+<article>
+    <form action="server.php" method="get">
+        <table>
+            <tr>
+                <td>firstname</td>
+                <td>email</td>
+                <td>about</td>
+                <td>password</td>
+            </tr>
+        </table>
+    </form>
+</article>
+<aside>
+    <P>Showing the data present</P>
+</aside>
+<footer> Thankyou for you reading </footer>
 </html>
